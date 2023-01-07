@@ -1,12 +1,12 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
 const MainPage = () => {
 
     return (
-        <div>
+        <Fragment>
            <div className="mainTitle">The New Vespa Tridient</div>
            <center><button className="btn btn-lg btn-vespa">Learn More</button></center>
-        </div>
+        </Fragment>
     )
 
 }
