@@ -1,20 +1,26 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import logo from '../../vespa_logo.jpg';
 import '../css/navigation.css';
+import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
 
     return (
-        <div className="col-sm-2 border">
+        <Fragment>
+        <div className="col-sm-2 g-0 border">
          <img src={ logo } class="logo"/>
          
          <ul>
-            <li>MODELS</li>
-            <li>LIFESTYLE</li>
-            <li>SHOP </li>
-            <li>TEST DRIVE</li>
+            <li><NavLink to="/models" class="active">MODELS</NavLink></li>
+            <li><NavLink to="/lifesytle">LIFESTYLE</NavLink></li>
+            <li><NavLink to="/shop">SHOP</NavLink> </li>
+            <li><NavLink to="/drive">TEST DRIVE </NavLink></li>
          </ul>
+
         </div>
+
+       
+        </Fragment>
     )
 
 }

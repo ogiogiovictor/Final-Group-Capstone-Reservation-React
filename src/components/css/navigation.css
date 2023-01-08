@@ -7,3 +7,41 @@
     width: 100px;
     padding:10px;
 }
+
+ul{
+    padding: 0;
+    margin: 0;
+    /* background-color: var(--btn-vespa); */
+    margin-top:40px;
+}
+
+ul li:first-child{
+    background-color: var(--btn-vespa);
+}
+
+
+ul li:hover{
+    background-color: var(--btn-vespa);
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+    padding: 6px;
+    padding-left:10px;
+    color: var(--bg-outer);
+}
+
+li a{
+    color:black;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Trirong';
+    font-weight: bolder;
+}
+
+li a:hover{
+    color: var(--btn-vespa);
+}
