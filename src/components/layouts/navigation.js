@@ -22,6 +22,7 @@ const Navigation = () => {
             <a href=""><i className="fa fa-facebook" aria-hidden="true"></i></a>
             <a href=""><i className="fa fa-twitter"></i></a>
             <a href=""><i className="fa fa-linkedin"></i></a>
+            <a href=""><i className="fa fa-google"></i></a>
             <a href=""><i className="fa fa-youtube"></i></a>
             </div>
             <div>
