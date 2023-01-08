@@ -2,3 +2,8 @@
     border: 2px solid #f1f1f1 !important;
     height: 100vh;
 }
+
+.logo {
+    width: 100px;
+    padding:10px;
+}
