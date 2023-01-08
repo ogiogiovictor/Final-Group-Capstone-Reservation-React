@@ -1,12 +1,15 @@
-import React, {Fragment} from 'react';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const MainPage = () => {
 
     return (
-        <Fragment>
+        <div className="App">
            <div className="mainTitle">The New Vespa Tridient</div>
-           <center><button className="btn btn-lg btn-vespa">Learn More</button></center>
-        </Fragment>
+           <center>
+           <NavLink to="/home"><button className="btn btn-lg btn-vespa">Learn More</button></NavLink>
+           </center>
+        </div>
     )
 
 }

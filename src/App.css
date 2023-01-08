@@ -1,5 +1,7 @@
 :root {
   --btn-vespa: #84b301;
+  --bg-inner: #f4f1f1;
+  --bg-outer: #ffffff;
 }
 
 .App{
@@ -27,4 +29,12 @@
 .btn-vespa {
   background-color: var(--btn-vespa);
   color:white
+}
+
+.main-bg {
+  background-color: var(--bg-inner);
+}
+
+.contend-bg{
+  background-color: var(--bg-outer);
 }
