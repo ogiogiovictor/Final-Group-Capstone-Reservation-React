@@ -17,6 +17,11 @@ ul{
 
 ul li:first-child{
     background-color: var(--btn-vespa);
+    color: white;
+}
+
+ul li:first-child a{
+    color: white;
 }
 
 
