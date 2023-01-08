@@ -50,3 +50,23 @@ li a{
 li a:hover{
     color: var(--btn-vespa);
 }
+
+.footera-area{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1px;
+    padding-left: 7px;
+    bottom: 0;
+    position: fixed;
+}
+
+.footera-area div:first-child a{ 
+    padding: 10px;
+}
+
+.footer-small {
+    font-size: 6px;
+    font-family: 'Trirong';
+    font-weight: bolder;
+    flex-direction: column;
+}
