@@ -1,0 +1,15 @@
+.content-area {
+text-align: center;
+padding-top:40px;
+}
+
+.content-area h2{
+    font-size: 25px;
+    font-family:  'Nunito';
+}
+/* Audiowide|Sofia|Triron|Nunito|Trirong */
+
+.content-area div{
+    font-size: 13px;
+    font-family: 'Trirong';
+}
