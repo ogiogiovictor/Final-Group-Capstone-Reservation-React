@@ -1,0 +1,70 @@
+.content-area {
+text-align: center;
+padding-top:40px;
+}
+
+.content-area h2{
+    font-size: 25px;
+    font-family:  'Nunito';
+}
+/* Audiowide|Sofia|Triron|Nunito|Trirong */
+
+.content-area div{
+    font-size: 11px;
+    font-family: 'Trirong';
+}
+
+
+/**************************** PRODUCT PAGE ****************************/
+.product-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 26px;
+}
+
+.product-container{
+    padding: 0 10px;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.myCard{
+    min-width: 200px;
+    max-width: 250px;
+    height: 250px;
+    background-color: black;
+    margin:10px;
+    color:white;
+}
+.fa-arrow-left, .fa-arrow-right{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    border:none;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btn-vespa);
+    cursor: pointer;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transition: 0.5s;
+}
+
+.next-btn{
+    right:0;
+}
+
+.next-btn p, 
+.prev-btn p {
+    font-size:40px;
+}
