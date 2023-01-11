@@ -38,3 +38,21 @@
 .contend-bg{
   background-color: var(--bg-outer);
 }
+
+.test_ride_bg {
+  /* background-image: url("http://localhost:3005/images/vespa8.jpg"); */
+  background: linear-gradient( rgba(35, 215, 107, 0.566), rgba(35, 215, 107, 0.566) ), url('http://localhost:3005/images/vespa8.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fdb403;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-position: 20% 40%;
+  align-items: center;
+  justify-content: center;
+  padding:220px;
+  color:white;
+  opacity: 60%;
+
+}

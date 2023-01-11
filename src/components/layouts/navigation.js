@@ -3,7 +3,7 @@ import logo from '../../vespa_logo.jpg';
 import '../css/navigation.css';
 import { NavLink } from 'react-router-dom';
 
-const Navigation = () => {
+const Navigation = (props) => {
 
     return (
         <Fragment>
@@ -11,10 +11,13 @@ const Navigation = () => {
          <img src={ logo } class="logo"/>
          
          <ul>
-            <li><NavLink to="/models" className="active">MODELS</NavLink></li>
-            <li><NavLink to="/lifesytle">LIFESTYLE</NavLink></li>
-            <li><NavLink to="/shop">SHOP</NavLink> </li>
-            <li><NavLink to="/drive">TEST DRIVE </NavLink></li>
+            <li><NavLink to="/models" className="active">MOTORCYCLES</NavLink></li>
+            <li><NavLink to="/drive">ADD MOTORCYCLES </NavLink></li>
+            <li><NavLink to="/test_ride">BOOK A RIDE</NavLink></li>
+            <li><NavLink to="/shop">MY RESERVATION</NavLink> </li>
+            <li><NavLink to="/drive">REMOVE MOTORCYCLES </NavLink></li>
+            <li onClick={props.onShowCart}><NavLink to="#">REGISTER </NavLink></li>
+            <li onClick={props.onLogin}><NavLink>LOGIN </NavLink></li>
          </ul>
 
          <footer class="footera-area">
