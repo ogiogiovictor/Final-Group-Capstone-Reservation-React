@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getMotocycle } from '../../redux/motorcycle/motocycle_slice';
+import Motorcycles from '../../motorcyles/motorcycles';
 
 import '../css/content.css';
 
 const Content = () => {
+    const allMotocycle = useSelector((state) => state.motor);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        if (!allMotocycle.length) {
+          dispatch(getMotocycle());
+        }
+      }, [allMotocycle.length, dispatch]);
+    
 
     const btnPressprev = () => { 
         let box = document.querySelector('.product-container');
@@ -32,7 +44,7 @@ const Content = () => {
                         <button className="next-btn" onClick={btnPressnext}><p><i className="fa fa-arrow-right"></i></p></button>
 
                         <div className="product-container">
-                            <div className="myCard">
+                            {/* <div className="myCard">
                                 <div><img src="http://localhost:3005/images/vespa1.jpg" /></div>
                                 <div className="myTitle">Vespa Espano</div>
                                 <div><button class="btn-xs btn-vespa">Reserve</button></div>
@@ -43,55 +55,14 @@ const Content = () => {
                                     <i className="fa fa-instagram"></i>
                                     <i className="fa fa-youtube"></i>
                                 </div>
-                            </div>
-                            <div className="myCard">
-                            <div><img src="http://localhost:3005/images/vespa2.jpg" /></div>
-                                <div className="myTitle">Newpa Vespa</div>
-                                <div><button class="btn-xs btn-vespa">Reserve</button></div>
-                                <div className="myContent">The Vespa is a class bassed Trip that helps drivers manage...</div>
-                                <div className="socialsLinks">
-                                    <i className="fa fa-facebook"></i>
-                                    <i className="fa fa-twitter"></i>
-                                    <i className="fa fa-instagram"></i>
-                                    <i className="fa fa-youtube"></i>
-                                </div>
-                            </div>
-                            <div className="myCard">
-                            <div><img src="http://localhost:3005/images/vespa3.jpg" /></div>
-                                <div className="myTitle">Motobycle</div>
-                                <div><button class="btn-xs btn-vespa">Reserve</button></div>
-                                <div className="myContent">The Vespa is a class bassed Trip that helps drivers manage...</div>
-                                <div className="socialsLinks">
-                                    <i className="fa fa-facebook"></i>
-                                    <i className="fa fa-twitter"></i>
-                                    <i className="fa fa-instagram"></i>
-                                    <i className="fa fa-youtube"></i>
-                                </div>
-                            </div>
-                            <div className="myCard">
-                            <div><img src="http://localhost:3005/images/vespa7.jpg" /></div>
-                                <div className="myTitle">Vespan New</div>
-                                <div><button class="btn-xs btn-vespa">Reserve</button></div>
-                                <div className="myContent">The Vespa is a class bassed Trip that helps drivers manage...</div>
-                                <div className="socialsLinks">
-                                    <i className="fa fa-facebook"></i>
-                                    <i className="fa fa-twitter"></i>
-                                    <i className="fa fa-instagram"></i>
-                                    <i className="fa fa-youtube"></i>
-                                </div>
-                            </div>
-                            <div className="myCard">
-                            <div><img src="http://localhost:3005/images/vespa5.jpg" /></div>
-                                <div className="myTitle">Cactlus Fins</div>
-                                <div><button class="btn-xs btn-vespa">Reserve</button></div>
-                                <div className="myContent">The Vespa is a class bassed Trip that helps drivers manage...</div>
-                                <div className="socialsLinks">
-                                    <i className="fa fa-facebook"></i>
-                                    <i className="fa fa-twitter"></i>
-                                    <i className="fa fa-instagram"></i>
-                                    <i className="fa fa-youtube"></i>
-                                </div>
-                            </div>
+                            </div> */}
+                            
+
+                            {
+                            allMotocycle.length ? <Motorcycles motorcycles={allMotocycle} /> : <h2>No Cars Found Found</h2>
+                            }
+
+                           
                         </div>
 
                     </div>

@@ -11,11 +11,11 @@ const Navigation = (props) => {
          <img src={ logo } class="logo"/>
          
          <ul>
-            <li><NavLink to="/models" className="active">MOTORCYCLES</NavLink></li>
-            <li><NavLink to="/drive">ADD MOTORCYCLES </NavLink></li>
+            <li><NavLink to="/" className="active">CARS</NavLink></li>
+            <li><NavLink to="/add_motor">ADD CARS </NavLink></li>
             <li><NavLink to="/test_ride">BOOK A RIDE</NavLink></li>
             <li><NavLink to="/shop">MY RESERVATION</NavLink> </li>
-            <li><NavLink to="/drive">REMOVE MOTORCYCLES </NavLink></li>
+            <li><NavLink to="/drive">REMOVE CARS </NavLink></li>
             <li onClick={props.onShowCart}><NavLink to="#">REGISTER </NavLink></li>
             <li onClick={props.onLogin}><NavLink>LOGIN </NavLink></li>
          </ul>
