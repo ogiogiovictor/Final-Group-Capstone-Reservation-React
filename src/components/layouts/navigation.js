@@ -11,7 +11,7 @@ const Navigation = (props) => {
          <img src={ logo } class="logo"/>
          
          <ul>
-            <li><NavLink to="/" className="active">CARS</NavLink></li>
+            <li><NavLink to="/home" className="active">CARS</NavLink></li>
             <li><NavLink to="/add_motor">ADD CARS </NavLink></li>
             <li><NavLink to="/test_ride">BOOK A RIDE</NavLink></li>
             <li><NavLink to="/shop">MY RESERVATION</NavLink> </li>
