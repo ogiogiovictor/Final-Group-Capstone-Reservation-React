@@ -35,6 +35,12 @@ Then you can clone the project by typing `git clone https://github.com/ogiogiovi
 
 ## Author
 
+👤 **Fernando César da Silva**
+
+- GitHub: [@fernando-silvabr66](https://github.com/fernando-silvabr66)
+- Twitter: [@fsilvabr1](https://twitter.com/fsilvabr1)
+- LinkedIn: [https://linkedin.com/in/fernando-silvabr66](https://linkedin.com/in/fernando-silvabr66) 
+
 👤 **Ogiogio Victor**
 
 - GitHub: [@githubhandle](https://github.com/ogiogiovictor)
