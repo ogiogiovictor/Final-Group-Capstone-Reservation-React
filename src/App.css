@@ -1,58 +1,63 @@
-:root {
-  --btn-vespa: #84b301;
-  --bg-inner: #f4f1f1;
-  --bg-outer: #ffffff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App{
-  background-color: #fdb403;
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.selected {
+  background-color: black;
+}
+
+.link {
+  font-size: 10px;
+  padding: 5px;
+  background-color: #eee;
+  border: solid 1px #999;
+  border-radius: 50px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-  filter: brightness(1);
-  background-image: url("http://localhost:3005/images/vespa8.jpg");
-  /* background: linear-gradient( rgba(232, 160, 3, 0.872), rgba(0, 0, 0, 0.5) ), url('http://localhost:3005/images/vespa7.jpg'); */
-  background-size: cover;
-  background-position: 20% 40%
 }
 
-.mainTitle {
-  font-weight: bold;
-  font-size: 60px;
-  font-family: 'Nunito';
+.App-link {
+  color: rgb(112, 76, 182);
 }
 
-.btn-vespa {
-  background-color: var(--btn-vespa);
-  color:white
-}
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
 
-.main-bg {
-  background-color: var(--bg-inner);
-}
+  50% {
+    transform: translateY(10px);
+  }
 
-.contend-bg{
-  background-color: var(--bg-outer);
-}
-
-.test_ride_bg {
-  /* background-image: url("http://localhost:3005/images/vespa8.jpg"); */
-  background: linear-gradient( rgba(35, 215, 107, 0.566), rgba(35, 215, 107, 0.566) ), url('http://localhost:3005/images/vespa8.jpg'); 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #fdb403;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-position: 20% 40%;
-  align-items: center;
-  justify-content: center;
-  padding:220px;
-  color:white;
-  opacity: 60%;
-
+  100% {
+    transform: translateY(0);
+  }
 }
