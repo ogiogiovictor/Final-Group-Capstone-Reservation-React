@@ -77,6 +77,12 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
+### User login details
+
+Username: JohnVictorFed
+User Email: John@home.com
+
+In order to run, you need to install RUBY and Rails in your computer.
 
 To get a local copy up and running, follow these steps.
 
@@ -162,8 +168,6 @@ rails rswag
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project..
 
 👤 **Ogiogio Victor**
 
