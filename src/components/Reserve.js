@@ -49,6 +49,7 @@ const Reserve = () => {
             onChange={(e) => setReservedCarId(e.target.value)}
             id="car"
           >
+            <option value="">Select a Car</option>
             {options}
           </select>
         </label>
