@@ -24,6 +24,11 @@ To get a local copy up and running follow these simple example steps.
 
 ### Install
 
+### User login details
+
+Username: JohnVictorFed
+User Email: John@home.com
+
 In order to run, you need to install RUBY and Rails in your computer. For windows you can go to
 
 Then you can clone the project by typing `git clone https://github.com/ogiogiovictor/rails_react_api`
@@ -39,7 +44,7 @@ Then you can clone the project by typing `git clone https://github.com/ogiogiovi
 
 - GitHub: [@fernando-silvabr66](https://github.com/fernando-silvabr66)
 - Twitter: [@fsilvabr1](https://twitter.com/fsilvabr1)
-- LinkedIn: [https://linkedin.com/in/fernando-silvabr66](https://linkedin.com/in/fernando-silvabr66) 
+- LinkedIn: [https://linkedin.com/in/fernando-silvabr66](https://linkedin.com/in/fernando-silvabr66)
 
 👤 **Ogiogio Victor**
 

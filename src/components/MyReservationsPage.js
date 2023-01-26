@@ -1,25 +1,18 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React from "react";
+import { useSelector } from "react-redux";
 
-import styles from './MyReservationsPage.module.css';
-
+import styles from "./MyReservationsPage.module.css";
 
 const MyReservationsPage = () => {
   const { reservations } = useSelector((state) => state.reservations);
   let list = null;
+
   if (reservations.length > 0) {
     list = reservations.map((item) => (
-
       <tr key={item.id} className={styles.tableRow}>
-        <td className={styles.tableData}>
-          {item.id}
-        </td>
-        <td className={styles.tableData}>
-          {item.reserved_from}
-        </td>
-        <td className={styles.tableData}>
-          {item.reserved_until}
-        </td>
+        <td className={styles.tableData}>{item.id}</td>
+        <td className={styles.tableData}>{item.reserved_from}</td>
+        <td className={styles.tableData}>{item.reserved_until}</td>
       </tr>
     ));
   }
@@ -35,14 +28,10 @@ const MyReservationsPage = () => {
             <th>Reserved Until</th>
           </tr>
         </thead>
-        <tbody className={styles.tableBody}>
-          {list}
-        </tbody>
+        <tbody className={styles.tableBody}>{list}</tbody>
       </table>
     </div>
   );
-
-}
+};
 
 export default MyReservationsPage;
-

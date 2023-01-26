@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { useLocation } from 'react-router-dom';
-import { CreateReservation } from '../features/reservations/reservationSlice';
-import styles from './Reserve.module.css';
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useLocation } from "react-router-dom";
+import { CreateReservation } from "../features/reservations/reservationSlice";
+import styles from "./Reserve.module.css";
 
 const Reserve = () => {
   const { cars } = useSelector((state) => state.cars);
@@ -16,12 +16,12 @@ const Reserve = () => {
   ));
   const [reservedCarId, setReservedCarId] = useState(id);
 
-  if (cars.length > 1 && reservedCarId === '') {
+  if (cars.length > 1 && reservedCarId === "") {
     setReservedCarId(cars[0].id);
   }
-  const [userRID, setUserRId] = useState('');
-  const [reservedFrom, setReservedFrom] = useState('');
-  const [reservedUntil, setReservedUntil] = useState('');
+  const [userRID, setUserRId] = useState("");
+  const [reservedFrom, setReservedFrom] = useState("");
+  const [reservedUntil, setReservedUntil] = useState("");
 
   const dispatch = useDispatch();
   const { message } = useSelector((state) => state.reservations);
@@ -34,7 +34,7 @@ const Reserve = () => {
   };
 
   useEffect(() => {
-    const id = JSON.parse(localStorage.getItem('userId'));
+    const id = JSON.parse(localStorage.getItem("userId"));
     setUserRId(id);
   }, []);
 
