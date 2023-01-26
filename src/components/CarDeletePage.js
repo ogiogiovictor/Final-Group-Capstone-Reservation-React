@@ -4,7 +4,7 @@ import { deleteCar, fetchCars } from '../features/car/carSlice';
 
 import styles from './CarDeletePage.module.css';
 
-export default function CarDeletePage() {
+const CarDeletePage = () => {
   const dispatch = useDispatch();
   const { allCars } = useSelector((state) => state.cars);
   React.useEffect(() => {
@@ -43,4 +43,7 @@ export default function CarDeletePage() {
       </table>
     </div>
   );
+
 }
+
+export default CarDeletePage;

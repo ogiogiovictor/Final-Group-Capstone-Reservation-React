@@ -3,7 +3,7 @@ import styles from './CarCard.module.css';
 import carImg from '../img/car.png';
 
 // eslint-disable-next-line react/prop-types
-export default function CarCard({ price, brand, model }) {
+const CarCard = ({ price, brand, model }) => {
   return (
     <div className={styles.container}>
       <img src={carImg} className={styles.carImg} alt={model} />
@@ -21,3 +21,8 @@ export default function CarCard({ price, brand, model }) {
     </div>
   );
 }
+
+export default CarCard;;
+
+
+

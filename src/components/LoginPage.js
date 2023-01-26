@@ -4,7 +4,8 @@ import { fetchUser, setCurrentUser } from '../features/user/userSlice';
 import styles from './LoginPage.module.css';
 import logoImage from '../img/logo.png';
 
-export default function LoginPage() {
+
+const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [userName, setUserName] = useState('');
   const [message, setMessage] = useState('');
@@ -41,3 +42,6 @@ export default function LoginPage() {
     </div>
   );
 }
+
+export default LoginPage;
+

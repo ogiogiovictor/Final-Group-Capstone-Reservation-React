@@ -8,7 +8,6 @@ const initialState = {
   status: 'idle',
 };
 
-// const deleteCarAction = createAction('delete/car');
 
 export const fetchCar = createAsyncThunk('car/fetch', async (page) => {
   try {

@@ -3,7 +3,8 @@ import { useSelector } from 'react-redux';
 
 import styles from './MyReservationsPage.module.css';
 
-export default function MyReservationsPage() {
+
+const MyReservationsPage = () => {
   const { reservations } = useSelector((state) => state.reservations);
   let list = null;
   if (reservations.length > 0) {
@@ -40,4 +41,8 @@ export default function MyReservationsPage() {
       </table>
     </div>
   );
+
 }
+
+export default MyReservationsPage;
+

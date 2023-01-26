@@ -6,7 +6,8 @@ import styles from './SingleCarPage.module.css';
 import carImage from '../img/car.png';
 import { fetchSingleCar } from '../features/singleCar/singleCarSlice';
 
-export default function SingleCarPage() {
+const SingleCarPage = () => {
+
   const location = useLocation();
   const id = location.state;
   const dispatch = useDispatch();
@@ -63,4 +64,8 @@ export default function SingleCarPage() {
       </div>
     </div>
   );
+
 }
+
+export default SingleCarPage;
+
