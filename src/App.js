@@ -7,7 +7,7 @@ import { fetchReservatins } from './features/reservations/reservationSlice';
 import SideBar from './components/SideBar';
 import LoginPage from './components/LoginPage';
 
-function App() {
+const App = () => {
   const dispatch = useDispatch();
   const { currentUser } = useSelector((state) => state.users);
 
