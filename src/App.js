@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Outlet } from 'react-router-dom';
 import './App.css';
+import { fetchUser } from './features/user/userSlice';
+import { fetchReservatins } from './features/reservations/reservationSlice';
+import SideBar from './components/SideBar';
+import LoginPage from './components/LoginPage';
 
-function App() {
+const App = () => {
+  const dispatch = useDispatch();
+  const { currentUser } = useSelector((state) => state.users);
+
+  const isUser = () => {
+    if (!currentUser) {
+      return (
+        <LoginPage />
+      );
+    }
+    return (
+      <>
+        <SideBar />
+        <Outlet />
+      </>
+    );
+  };
+
+  React.useEffect(() => {
+    dispatch(fetchUser());
+    dispatch(fetchReservatins());
+  }, [dispatch]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {isUser()}
     </div>
   );
 }

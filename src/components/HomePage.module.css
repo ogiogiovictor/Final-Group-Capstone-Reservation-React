@@ -1,0 +1,176 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 8;
+  height: 90vh;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+}
+
+.carLink {
+  text-decoration: none;
+  color: black;
+}
+
+.mainHeading {
+  text-transform: uppercase;
+}
+
+.headingInfo {
+  color: #999;
+}
+
+.noCars {
+  text-align: center;
+}
+
+.modelsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 4;
+  gap: 20px;
+  width: 95%;
+}
+
+.pageBtnPrev {
+  height: 5vw;
+  width: 8vw;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #96c01f;
+  border: none;
+  outline: none;
+  box-shadow: 2px 3px 3px #eee;
+  transition: all 0.3s;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color: white;
+}
+
+.pageBtnNext {
+  height: 5vw;
+  width: 8vw;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #96c01f;
+  border: none;
+  outline: none;
+  box-shadow: 2px 3px 3px #eee;
+  transition: all 0.3s;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  color: white;
+}
+
+.pageBtnDisabledNext {
+  height: 5vw;
+  width: 8vw;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #999;
+  border: none;
+  outline: none;
+  box-shadow: 2px 3px 3px #eee;
+  transition: all 0.3s;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  color: white;
+}
+
+.pageBtnDisabledPrev {
+  height: 5vw;
+  width: 8vw;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #999;
+  border: none;
+  outline: none;
+  box-shadow: 2px 3px 3px #eee;
+  transition: all 0.3s;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color: white;
+}
+
+.pageBtnPrev:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 5px 5px #999;
+}
+
+.pageBtnNext:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 5px 5px #999;
+}
+
+.pageBtnPrev:active {
+  transform: translateY(1px);
+  box-shadow: 1px 1px 1px #eee;
+}
+
+.pageBtnNext:active {
+  transform: translateY(1px);
+  box-shadow: 1px 1px 1px #eee;
+}
+
+.carsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  flex: 6;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 100%;
+  }
+
+  .header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .carsContainer {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .pageBtnNext {
+    align-self: flex-end;
+  }
+
+  .pageBtnPrev {
+    align-self: flex-end;
+  }
+
+  .pageBtnDisabledNext {
+    align-self: flex-end;
+  }
+
+  .pageBtnDisabledPrev {
+    height: 5vw;
+    align-self: flex-end;
+  }
+
+  .noCars {
+    font-size: 16px;
+  }
+
+  .mainHeading {
+    font-size: 18px;
+  }
+
+  .headingInfo {
+    font-size: 14px;
+  }
+}

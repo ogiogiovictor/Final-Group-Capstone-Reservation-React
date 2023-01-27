@@ -1,70 +1,228 @@
-# Getting Started with Create React App
+# 📗 Table of Contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-## Available Scripts
+# 📖 [Rentomotors] <a name="Rentomotors"></a>
 
-In the project directory, you can run:
+> Rentomotors is an app that enables users to reserve cars for their personal benefits for a certain period of time.
 
-### `npm start`
+## Images
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://user-images.githubusercontent.com/77974883/215064710-20f37924-716a-44b1-b0ba-dc6581502f53.png)
+![image](https://user-images.githubusercontent.com/77974883/215064959-3d5a3381-d982-4338-aa9b-6aca97503b0d.png)
+![image](https://user-images.githubusercontent.com/77974883/215065024-d02ecc0b-5b47-4b05-8cef-5fdbf5285af2.png)
+![image](https://user-images.githubusercontent.com/77974883/215065087-3561ddcf-8602-4f1a-9fd0-f4d63ca01a1c.png)
+![image](https://user-images.githubusercontent.com/77974883/215065178-88e814e0-688a-4e71-814e-1d261f3cdae8.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Links
 
-### `npm test`
+- [React Frontend of this app](https://github.com/ogiogiovictor/Final-Group-Capstone-Reservation-React)
+- [Api Documentation](https://rento-api.onrender.com/api-docs/index.html)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠 Built With <a name="built-with"></a>
 
-### `npm run build`
+- Ruby
+- Rails
+- Gem
+- React
+- postgresql
+- rswag
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tech Stack <a name="tech-stack"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> This project was built using as major staks the following:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
 
-### `npm run eject`
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details>
+  <summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Key Features <a name="key-features"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> A user can login into the app after being authorized.
+> A user can see add and delete cars.
+> A user can reserve on or many of the cars in the app.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **[MVC]**
 
-## Learn More
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- GETTING STARTED -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 💻 Getting Started <a name="getting-started"></a>
 
-### Code Splitting
+### User login details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Username: JohnVictorFed
+User Email: John@home.com
 
-### Analyzing the Bundle Size
+In order to run, you need to install RUBY and Rails in your computer.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To get a local copy up and running, follow these steps.
 
-### Making a Progressive Web App
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+In order to run this project you need:
 
-### Advanced Configuration
+Make sure you have installed locally:
+Ruby 
+Nodejs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!--
+Example command:
 
-### Deployment
+```sh
+ gem install rails
+```
+ -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Setup
 
-### `npm run build` fails to minify
+Clone the back-end portion of the project from this repository to your desired folder : git clone https://github.com/ogiogiovictor/Final-Group-Capstone-Reservation-Rails
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Execute on console making sure you are in the correct directory:
+```sh
+bundle install
+npm i
+```
+
+-create a file named application.yml under config folder and write the following Variables:
+```sh
+USER_NAME = “xxx” (xxx replace with your Postgres user name)
+PASSWORD = “xxx” (xxx replace with your Postgres password)
+```
+-On console execute
+```sh
+rails db:create
+rails db:migrate
+rails db:seed
+```
+
+-Create Master key:
+```sh
+EDITOR="mate --wait" bin/rails credentials:edit
+```
+```sh
+rails s
+```
+
+clone the front-end portion from this repository to your destination folder: git clone https://github.com/ogiogiovictor/Final-Group-Capstone-Reservation-React
+
+Navigate to correct directory:
+
+Add Dependencies
+```sh
+npm i
+```
+
+```sh
+npm start
+```
+when asked for a new port for local host type "y"
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## API documentation
+
+- [Api Documentation](https://rento-api.onrender.com/api-docs/index.html)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Ogiogio Victor**
+
+- GitHub: [@githubhandle](https://github.com/ogiogiovictor)
+- Twitter: [@twitterhandle](https://twitter.com/ogiogiovictor)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ogiogiovictor)
+
+👤 **Omachi John**
+
+- GitHub: [@Mromaci](https://github.com/mromachi)
+- Twitter: [@mr_omachi](https://twitter.com/mr_omachi)
+- LinkedIn: [John Omachi](https://www.linkedin.com/in/johnomachi/)
+
+👤 **Silva Fernando César da**
+
+- GitHub: [@fernando-silvabr66](https://github.com/fernando-silvabr66)
+- Twitter: [@fsilvabr1](https://twitter.com/fsilvabr1)
+- LinkedIn: [https://linkedin.com/in/fernando-silvabr66](https://linkedin.com/in/fernando-silvabr66) 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- **[Authentication]**
+- **[CRUD]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/ogiogiovictor/Final-Group-Capstone-Reservation-Rails/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+> leave a star if you enjoyed the project.
+
+If you like this project star the project and leave a star
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> This project was built and developed around the UI idea of [Murat Korkmaz](https://www.behance.net/muratk) on [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/)
+
+> We would like to thank Microverse.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
