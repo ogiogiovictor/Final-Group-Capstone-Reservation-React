@@ -19,7 +19,7 @@ const MyReservationsPage = () => {
 
   return (
     <div className={styles.container}>
-      <h1>All your Reserations</h1>
+      <h1>All your Reservations</h1>
       <table className={styles.table}>
         <thead className={styles.tableHeader}>
           <tr className={styles.tableHeading}>
